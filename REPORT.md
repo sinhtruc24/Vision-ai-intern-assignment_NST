@@ -1,5 +1,5 @@
 # Báo cáo: Phân loại chó và mèo bằng MobileNetV2 (dùng gg colab để train với GPU-T4)
-![alt text](image-4.png)
+![1](Vision-ai-intern-assignment_NST\images\Pipeline.png)
 ## 1. Pipeline
 1. **Bộ dữ liệu**  
    - Kaggle dataset: [Bhavik Jikadara — Cat & Dog Classification Dataset](https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset)   
@@ -19,7 +19,7 @@
      - Dense(1, Sigmoid)  
    - Giai đoạn 1: Chỉ train phần head  
    - Giai đoạn 2: Fine-tune từ layer thứ 100 trở đi đến hết MobileNetV2 với learning rate thấp  
-   ![alt text](image.png)
+   ![2](Vision-ai-intern-assignment_NST\images\ThamsoMohinh.png)
 
 4. **Huấn luyện**  
    - Optimizer: Adam  
@@ -31,8 +31,8 @@
    - Accuracy trên tập validation: ~98.9%  
    - Confusion Matrix cho thấy số lỗi rất ít  
    - Classification Report: Precision/Recall/F1 ~0.99 
-   ![alt text](image-1.png) 
-   ![alt text](image-2.png)
+   ![3](Vision-ai-intern-assignment_NST\images\MaTranNhamLan.png) 
+   ![4](Vision-ai-intern-assignment_NST\images\Classification_report.png)
 
 6. **Demo**  
    - Hàm `predict_and_show()` dùng để dự đoán trên 1 ảnh mới (có thể demo trực tiếp theo như notebook hoặc chạy web demo)
@@ -57,7 +57,7 @@
      uvicorn app:app --reload
      ```  
    - Có thể tích hợp thêm phần hiển thị ảnh và kết quả dự đoán trực quan trong trình duyệt. 
-![alt text](image-3.png)
+![5](Vision-ai-intern-assignment_NST\images\DemoWeb.png)
 ---
 
 ## 4. Hạn chế

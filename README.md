@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Cấu trúc dự án
 
 ```
-vision-ai-intern-assignment/
+vision-ai-intern-assignment_NST/
 │── app.py
 │── train.ipynb
 │── best_mn_finetune.keras
@@ -64,7 +64,7 @@ Mô hình được huấn luyện trên Google Colab (GPU T4).
 **Chạy server tại máy local:**
 
 ```bash
-cd vision-ai-intern-assignment
+cd vision-ai-intern-assignment_NST
 python -m uvicorn app:app --reload
 ```
 
