@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog vs Cat Classifier</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 40px; }
+    img { max-width: 300px; margin-top: 20px; border-radius: 10px; }
+    input[type=file] { margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>🐶🐱 Dog vs Cat Classifier</h1>
+  <input type="file" id="fileInput" accept="image/*">
+  <button onclick="uploadImage()">Predict</button>
+  <div id="result"></div>
+  <img id="preview" src="" alt="preview">
+
+  <script>
+    function uploadImage() {
+      const fileInput = document.getElementById("fileInput");
+      const file = fileInput.files[0];
+      if (!file) return alert("Please select an image!");
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      fetch("/predict", { method: "POST", body: formData })
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("result").innerHTML =
+            `<h3>Prediction: ${data.prediction}</h3>
+             <p>${data.probabilities.Cat} Cat | ${data.probabilities.Dog} Dog</p>`;
+        });
+
+      const reader = new FileReader();
+      reader.onload = e => document.getElementById("preview").src = e.target.result;
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+</html>

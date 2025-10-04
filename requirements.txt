@@ -1,0 +1,9 @@
+tensorflow>=2.8
+numpy
+matplotlib
+seaborn
+pillow
+scikit-learn
+kagglehub
+fastapi
+uvicorn
