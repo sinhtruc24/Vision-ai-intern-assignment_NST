@@ -33,7 +33,7 @@ Hệ thống TTS gồm 4 thành phần chính:
 
 Sơ đồ pipeline minh họa:
 
-![TTS Pipeline](pipeline.png)
+![TTS Pipeline](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise2_Text%20to%20speech/Pipeline_EX2.png)
 
 ---
 
@@ -153,4 +153,5 @@ Sơ đồ pipeline minh họa:
 - Hỗ trợ **streaming synthesis** cho chatbot/voice assistant.
 
 ---
+
 
