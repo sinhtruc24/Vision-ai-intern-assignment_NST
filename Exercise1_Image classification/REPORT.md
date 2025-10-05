@@ -1,5 +1,7 @@
-# Báo cáo: Phân loại chó và mèo bằng MobileNetV2 (dùng gg colab để train với GPU-T4)
-![1](Vision-ai-intern-assignment_NST\images\Pipeline.png)
+# Báo cáo: Phân loại chó và mèo bằng MobileNetV2 
+
+![Pipeline](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/Pipeline.png)  
+
 ## 1. Pipeline
 1. **Bộ dữ liệu**  
    - Kaggle dataset: [Bhavik Jikadara — Cat & Dog Classification Dataset](https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset)   
@@ -18,8 +20,9 @@
      - Dropout(0.5)  
      - Dense(1, Sigmoid)  
    - Giai đoạn 1: Chỉ train phần head  
-   - Giai đoạn 2: Fine-tune từ layer thứ 100 trở đi đến hết MobileNetV2 với learning rate thấp  
-   ![2](Vision-ai-intern-assignment_NST\images\ThamsoMohinh.png)
+   - Giai đoạn 2: Fine-tune từ layer thứ 100 trở đi đến hết MobileNetV2 với learning rate thấp
+     
+   ![Tham số mô hình](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/ThamsoMohinh.png)  
 
 4. **Huấn luyện**  
    - Optimizer: Adam  
@@ -30,9 +33,13 @@
 5. **Đánh giá**  
    - Accuracy trên tập validation: ~98.9%  
    - Confusion Matrix cho thấy số lỗi rất ít  
-   - Classification Report: Precision/Recall/F1 ~0.99 
-   ![3](Vision-ai-intern-assignment_NST\images\MaTranNhamLan.png) 
-   ![4](Vision-ai-intern-assignment_NST\images\Classification_report.png)
+   - Classification Report: Precision/Recall/F1 ~0.99
+
+     
+   ![Ma trận nhầm lẫn](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/MaTranNhamLan.png)
+
+   ![Classification Report](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/Classification_report.png)
+
 
 6. **Demo**  
    - Hàm `predict_and_show()` dùng để dự đoán trên 1 ảnh mới (có thể demo trực tiếp theo như notebook hoặc chạy web demo)
@@ -56,8 +63,10 @@
      ```bash
      uvicorn app:app --reload
      ```  
-   - Có thể tích hợp thêm phần hiển thị ảnh và kết quả dự đoán trực quan trong trình duyệt. 
-![5](Vision-ai-intern-assignment_NST\images\DemoWeb.png)
+   - Có thể tích hợp thêm phần hiển thị ảnh và kết quả dự đoán trực quan trong trình duyệt.
+
+![Demo Web](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/DemoWeb.png)  
+
 ---
 
 ## 4. Hạn chế
