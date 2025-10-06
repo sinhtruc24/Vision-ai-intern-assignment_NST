@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 vision-ai-intern-assignment_NST/
 │── app.py
-│── train.ipynb
+│── Exercise 1 – Image classification_NSTruc.ipynb (file train)
 │── best_mn_finetune.keras
 │── report.md
 │── README.md
