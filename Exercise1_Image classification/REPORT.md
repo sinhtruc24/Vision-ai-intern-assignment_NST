@@ -1,6 +1,6 @@
 # Báo cáo: Phân loại chó và mèo bằng MobileNetV2 
 
-![Pipeline](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/Pipeline.png)  
+![Pipeline](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image%20classification/images/Pipeline.png)  
 
 ## 1. Pipeline
 1. **Bộ dữ liệu**  
@@ -22,7 +22,7 @@
    - Giai đoạn 1: Chỉ train phần head  
    - Giai đoạn 2: Fine-tune từ layer thứ 100 trở đi đến hết MobileNetV2 với learning rate thấp
      
-   ![Tham số mô hình](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/ThamsoMohinh.png)  
+   ![Tham số mô hình](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image%20classification/images/ThamsoMohinh.png)  
 
 4. **Huấn luyện**  
    - Optimizer: Adam  
@@ -36,9 +36,9 @@
    - Classification Report: Precision/Recall/F1 ~0.99
 
      
-   ![Ma trận nhầm lẫn](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/MaTranNhamLan.png)
+   ![Ma trận nhầm lẫn](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image%20classification/images/MaTranNhamLan.png)
 
-   ![Classification Report](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/Classification_report.png)
+   ![Classification Report](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image%20classification/images/Classification_report.png)
 
 
 6. **Demo**  
@@ -65,7 +65,7 @@
      ```  
    - Có thể tích hợp thêm phần hiển thị ảnh và kết quả dự đoán trực quan trong trình duyệt.
 
-![Demo Web](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image classification/images/DemoWeb.png)  
+![Demo Web](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise1_Image%20classification/images/DemoWeb.png)  
 
 ---
 
