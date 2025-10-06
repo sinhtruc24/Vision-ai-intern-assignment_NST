@@ -31,7 +31,7 @@ Hệ thống TTS gồm 4 thành phần chính:
 4. **Post-processing và Deployment:**  
    Xử lý âm thanh cuối, chuẩn hóa volume, lưu file, đóng gói API.
 
-Sơ đồ pipeline minh họa:
+**Sơ đồ pipeline minh họa:**
 
 ![TTS Pipeline](https://github.com/sinhtruc24/Vision-ai-intern-assignment_NST/blob/main/Exercise2_Text%20to%20speech/Pipeline_EX2.png)
 
@@ -153,5 +153,6 @@ Sơ đồ pipeline minh họa:
 - Hỗ trợ **streaming synthesis** cho chatbot/voice assistant.
 
 ---
+
 
 
